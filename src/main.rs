@@ -20,7 +20,7 @@ async fn download_file() {
 
 async fn get_rate() -> f32 {
     download_file().await;
-    let file = File::open("tarif-cre.csv").unwrap();
+    let file = File::open("tarif-kwh.csv").unwrap();
 
     let mut rdr = ReaderBuilder::new().delimiter(b';').from_reader(file);
 
